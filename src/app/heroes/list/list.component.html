@@ -1,8 +1,12 @@
 <h1>Heroes list</h1>
 
 <div>
-    <h3>Last deleted hero: <span> {{ lastDeletedHero }}</span></h3>
+    <h3 *ngIf='lastDeletedHero; else noDeletedHeroes'>Last deleted hero: <span> {{ lastDeletedHero }}</span></h3>
 </div>
+
+<ng-template #noDeletedHeroes>
+    <h3> No heroes deleted</h3>
+</ng-template>
 
 <button (click) = 'deleteHero()'>Delete hero</button>
 

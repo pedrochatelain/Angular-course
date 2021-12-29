@@ -1,3 +1,7 @@
+# Last class
+
+55. Módulo DBZ (Dragon Ball Z)
+
 # Bases
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3.

@@ -11,7 +11,7 @@ export class ListComponent {
   firstHero: string = this.heroes[0];
 
   // Delete the last hero of the array and save it on 'lastDeletedHero'
-  // If all heroes were deleted, 'lastDeletedHero' will be the 'firstHero'
+  // If all heroes were deleted, 'lastDeletedHero' is 'firstHero'
   deleteHero() {
     this.lastDeletedHero =  this.heroes.pop() || this.firstHero;
   }
