@@ -1,6 +1,6 @@
 # Last class
 
-55. Módulo DBZ (Dragon Ball Z)
+58. NgModel
 
 # Bases
 
