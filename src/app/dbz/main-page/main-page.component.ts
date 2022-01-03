@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Character } from '../dbz.interface'
+import { DbzService } from '../services/dbz.service';
 
 
 @Component({
@@ -19,26 +20,16 @@ export class MainPageComponent {
     }
   ];
 
-  newCharacter: Character = {
-    name: '',
-    power: 0
+  new: Character = {
+    name: 'Pedro',
+    power: 3000
   }
 
-  add() {
-    if (this.newCharacter.name.trim().length === 0) {
-      return;
-    }
-    console.log(this.newCharacter)
-    this.characters.push(this.newCharacter);
-    this.newCharacter = {
-      name: '',
-      power: 0
-    }
-    console.log(this.characters);
+  addNewCharacter(c: Character) {
+    console.log(c)
+    this.characters.push(c)
   }
 
-  changeName(e: any) {
-    console.log(e.target.value)
-  }
+  constructor(private dbzService: DbzService) { }
 
 }

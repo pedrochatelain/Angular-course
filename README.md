@@ -1,6 +1,6 @@
 # Last class
 
-58. NgModel
+66. Servicios
 
 # Bases
 
