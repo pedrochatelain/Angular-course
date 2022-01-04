@@ -39,17 +39,16 @@
     padding: 1px;
   }
 
-  .row {
-    display: flex;
-  }
+.row {
+  display: flex;
+}
 
-  .col {
-    flex-grow: 1;
-    margin-right: 10px;
-  }
+.col {
+  flex-grow: 1;
+  margin-right: 10px;
+}
 
-  input {
-    display: block;
-    margin: 5px;
-  }
-
+input {
+  display: block;
+  margin: 5px
+}
