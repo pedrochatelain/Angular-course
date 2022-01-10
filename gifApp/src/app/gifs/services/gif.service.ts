@@ -14,7 +14,12 @@ export class GifService {
     return [...this._historial];
   }
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    if (localStorage.getItem('historial')) {
+      this._historial = JSON.parse(localStorage.getItem('historial')!)
+      this.resultados = JSON.parse(localStorage.getItem('resultados')!)
+    }
+  }
 
   addGif(query: string) {
 
@@ -26,10 +31,11 @@ export class GifService {
       if (!this._historial.includes(query)) {
         this._historial.unshift(query);
         this._historial = this._historial.splice(0, 10);
+        localStorage.setItem('historial', JSON.stringify(this._historial));
       }
       this.http.get<SearchGIFResponse>(url).subscribe(res => {
-        console.log(res);
         this.resultados = res.data;
+        localStorage.setItem('resultados', JSON.stringify(this.resultados));
       });
     }
 
