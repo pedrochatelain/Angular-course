@@ -9,14 +9,14 @@ import { GifService } from '../services/gif.service';
 })
 export class BusquedaComponent {
 
-  @ViewChild('txtBuscar') txtBuscar!:ElementRef<HTMLInputElement>
+  @ViewChild('txtBuscar') txtBuscar!: ElementRef<HTMLInputElement>
 
-  constructor(private gifService: GifService) {}
+  constructor(private gifService: GifService) { }
 
   buscar() {
     const value = this.txtBuscar.nativeElement.value
     this.txtBuscar.nativeElement.value = '';
-    this.gifService.addGif(value);
+    this.gifService.searchGif(value);
   }
 
 }
