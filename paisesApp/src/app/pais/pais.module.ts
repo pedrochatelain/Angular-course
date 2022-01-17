@@ -5,6 +5,7 @@ import { CapitalComponent } from './pages/capital/capital.component';
 import { PaisComponent } from './pages/pais/pais.component';
 import { RegionComponent } from './pages/region/region.component';
 import { VerPaisComponent } from './pages/ver-pais/ver-pais.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -17,7 +18,8 @@ import { VerPaisComponent } from './pages/ver-pais/ver-pais.component';
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   exports: [
     CapitalComponent,
