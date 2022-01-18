@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Last class
 
-109 Llenar la tabla de países
+112 DebounceTime - en el input
 
 ## Development server
 

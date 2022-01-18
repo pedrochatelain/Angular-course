@@ -6,6 +6,8 @@ import { PaisComponent } from './pages/pais/pais.component';
 import { RegionComponent } from './pages/region/region.component';
 import { VerPaisComponent } from './pages/ver-pais/ver-pais.component';
 import { RouterModule } from '@angular/router';
+import { PaisTablaComponent } from './components/pais-tabla/pais-tabla.component';
+import { PaisInputComponent } from './components/pais-input/pais-input.component';
 
 
 
@@ -14,7 +16,9 @@ import { RouterModule } from '@angular/router';
     CapitalComponent,
     PaisComponent,
     RegionComponent,
-    VerPaisComponent
+    VerPaisComponent,
+    PaisTablaComponent,
+    PaisInputComponent
   ],
   imports: [
     CommonModule,
