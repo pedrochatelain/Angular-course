@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Last class
 
-112 DebounceTime - en el input
+114 Ver país de forma independiente
 
 ## Development server
 
