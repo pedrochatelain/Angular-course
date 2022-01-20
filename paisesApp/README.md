@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Last class
 
-114 Ver país de forma independiente
+121 Continuación del proyecto - PaísesApp
 
 ## Development server
 
