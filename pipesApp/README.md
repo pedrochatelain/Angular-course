@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Last Class
 
-137 Cards y botones con íconos
+140 Rutas de nuestra aplicación
 
 ## Development server
 
