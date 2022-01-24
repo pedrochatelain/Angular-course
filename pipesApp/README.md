@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Last Class
 
-140 Rutas de nuestra aplicación
+145 Cambiar el idioma por defecto
 
 ## Development server
 
