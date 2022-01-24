@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Last Class
 
-145 Cambiar el idioma por defecto
+148 CurrencyPipe y PercentPipe
 
 ## Development server
 
