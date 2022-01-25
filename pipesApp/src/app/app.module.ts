@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { LOCALE_ID, NgModule } from '@angular/core';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { AppRouterModule } from './app-router.module';
@@ -17,6 +17,7 @@ registerLocaleData(localArgentina);
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     SharedModule,
     AppRouterModule,
     VentasModule

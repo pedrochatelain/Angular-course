@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Last Class
 
-148 CurrencyPipe y PercentPipe
+153 SlicePipe
 
 ## Development server
 
