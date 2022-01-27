@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Last class
 
-(A MEDIO TERMINAR) 163. PrimeTable y PrimeToolbar
+(A MEDIO TERMINAR) 163. PrimeTable y PrimeToolbar --> remember to execute `npm install`
 
 ---
 
