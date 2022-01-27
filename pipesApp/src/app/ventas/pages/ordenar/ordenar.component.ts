@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-ordenar',
@@ -6,11 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class OrdenarComponent implements OnInit {
+export class OrdenarComponent {
 
-  constructor() { }
+  myName: string = 'Pedro Chatelain'
+  uppercaseBoolean: boolean = false;
 
-  ngOnInit(): void {
+  toggleUppercase(): void {
+    this.uppercaseBoolean = ! this.uppercaseBoolean
   }
 
 }

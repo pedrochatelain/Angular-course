@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-no-comunes',
@@ -6,39 +7,68 @@ import { Component } from '@angular/core';
   styles: [
   ]
 })
-export class NoComunesComponent {
+export class NoComunesComponent  {
 
   // i18nSelect
-  nombre: string = 'Pedro';
-  genero: string = 'm'
-
-  welcomeMap = {
-    'm': 'Bienvenido',
-    'f': 'Bienvenida'
+  nombre: string = 'Fernando';
+  genero: string = 'masculino';
+  invitacionMapa = {
+    'masculino': 'invitarlo',
+    'femenino' : 'invitarla'
   }
 
-  //i18nPlural
-  clientes: string[] = ['Florencia', 'Pedro', 'Pablo', 'Juan']
-
-  clientesMap = {
-    '=0': 'no hay clientes esperando',
-    '=1': 'hay 1 cliente esperando',
-    '=2': 'hay dos clientes esperando',
-    'other': 'hay # clientes esperando'
+  // i18nPlural
+  clientes: string[] = ['Maria', 'Pedro', 'Hernando', 'Eduardo','Fernando'];
+  clientesMapa = {
+    '=0': 'no tenemos ningún cliente esperando.',
+    '=1': 'tenemos un cliente esperando.',
+    '=2': 'tenemos 2 clientes esperando.',
+    'other': 'tenemos # clientes esperando.'
   }
 
-  changeName(): void {
-    if (this.nombre === 'Pedro') {
-      this.nombre = 'Florencia'
-      this.genero = 'f'
-    } else {
-      this.nombre = 'Pedro'
-      this.genero = 'm'
-    }
+  cambiarCliente() {
+    this.nombre = 'Melissa';
+    this.genero = 'femenino';
   }
 
-  deleteClient(): void {
-    this.clientes.pop()
+  borrarCliente() {
+    this.clientes.pop();
   }
+
+
+  // KeyValue Pipe
+  persona = {
+    nombre: 'Fernando',
+    edad: 35,
+    direccion: 'Ottawa, Canadá'
+  }
+
+  // JsonPipe
+  heroes = [
+    {
+      nombre: 'Superman',
+      vuela: true
+    },
+    {
+      nombre: 'Robin',
+      vuela: false
+    },
+    {
+      nombre: 'Aquaman',
+      vuela: false
+    },
+  ]
+
+
+  // Async Pipe
+  miObservable = interval(2000); // 0,1,2,3,4,5,6,
+
+  valorPromesa = new Promise( (resolve, reject) => {
+
+    setTimeout(() => {
+      resolve( 'Tenemos data de promesa' );
+    }, 3500 );
+
+  });
 
 }

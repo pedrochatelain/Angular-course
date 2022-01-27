@@ -1,1 +1,35 @@
-<p>ordenar works!</p>
+<div class="text-layout">
+    <h1>Custom pipes</h1>
+    <p>Pipes created by {{ myName | uppercasePipeCreatedByMe:uppercaseBoolean }} </p>
+</div>
+
+<button pButton
+        type="button"
+        label="Toggle uppercase"
+        class="p-button-outlined"
+        (click)="toggleUppercase()">
+</button>
+
+<p-toolbar>
+    <div class="p-toolbar-group-left">
+        
+    </div>
+    
+    <div class="p-toolbar-group-right">
+     
+        
+
+        <button pButton
+                icon= 'pi pi-sort'
+                label="Por nombre"
+                class="p-mr-1">
+        </button>
+
+        <button pButton
+                icon= 'pi pi-sort'
+                label="Valores"
+                class="p-mr-1 p-button-success">
+        </button>
+    
+    </div>
+</p-toolbar>
