@@ -15,4 +15,6 @@ export class OrdenarComponent {
     this.uppercaseBoolean = ! this.uppercaseBoolean
   }
 
+  cambiar(): void {}
+
 }
