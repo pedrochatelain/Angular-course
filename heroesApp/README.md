@@ -1,3 +1,3 @@
 # Last class
 
-186. Material Navlist
+192. Tarea - HeroeTarjetaComponent
