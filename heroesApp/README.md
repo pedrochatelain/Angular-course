@@ -1,3 +1,6 @@
 # Last class
 
-192. Tarea - HeroeTarjetaComponent
+197. Variables de entorno
+
+REMEMBER TO RUN THE SERVER 
+
